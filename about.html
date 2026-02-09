@@ -124,6 +124,28 @@
       color: var(--muted);
       font-size: 0.85rem;
     }
+
+  @media (max-width: 768px) {
+  section {
+    padding: 2rem 1.2rem; /* less side padding */
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .about-content img {
+    width: 100%;
+    max-width: 320px;
+    height: 420px;
+  }
+
+  .about {
+    text-align: left;   /* better readability on mobile */
+  }
+}
   </style>
 </head>
 
@@ -172,4 +194,5 @@
 
 </body>
 </html>
+
 
