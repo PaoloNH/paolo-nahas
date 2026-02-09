@@ -1,0 +1,80 @@
+:root {
+  --bg: #f3efe9;
+  --text: #1c1c1c;
+  --muted: #6f6f6f;
+  --line: #ded7cd;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(253,253,252,0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  z-index: 100;
+}
+
+nav ul {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  margin-left: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE: centered + consistent spacing */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* this is the row/stack that contains your tabs */
+  nav ul li:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;   /* increase/decrease as you like */
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+  .page-about section {
+    padding: 2rem 1.2rem;
+  }
+
+  .page-about .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .page-about .about-content img {
+    width: 100%;
+    max-width: 320px;
+    height: 380px;          /* smaller than 620px */
+    object-fit: cover;
+    object-position: center 10%;
+  }
+
+  .page-about .about {
+    text-align: left;       /* reads better on phones */
+  }
+
+
+}
