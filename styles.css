@@ -77,9 +77,10 @@ nav a:hover {
   }
 
   .page-services .services p {
-    text-align: justify;
+    text-align: auto;
     hyphens: auto;
   }
+
 
 
 }
